@@ -1,0 +1,13 @@
+﻿@using ExampleWithAspNet.Models 
+
+@model  IEnumerable<School>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+<p> @item.Id </p>
+<p> @item.Name </p>
+<p> @item.ZipCode</p>
+}

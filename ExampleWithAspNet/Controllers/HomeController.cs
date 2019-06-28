@@ -22,15 +22,6 @@ namespace ExampleWithAspNet.Controllers
         {          
             var schools = schoolService.GetSchools(x => x.Id >= 2);
 
-            var CityName = "Lviv";
-
-            decimal Price = 12.45m;
-            
-            string Location = "SomeCity";
-
-
-            string SomePerson = "SomePerson";
-
             return View(schools);
         }
 
@@ -40,6 +31,8 @@ namespace ExampleWithAspNet.Controllers
 
             return View(schools);
         }
+
+        
         
     }
 }

@@ -18,6 +18,7 @@ namespace ExampleWithAspNet.Mapping
             
             this.Property(p => p.Name).IsRequired();
             this.Property(p => p.Age).IsRequired();
+            this.Property(p => p.RegionFrom).IsRequired();
         }
     }
 }

@@ -13,6 +13,8 @@ namespace ExampleWithAspNet.Models
         public int Graduete { get; set; }
       
 
+        public string RegionFrom { get; set; }
+
         public int? SchoolId { get; set; }
         public School School { get; set; }
     }

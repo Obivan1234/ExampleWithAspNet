@@ -28,6 +28,9 @@ namespace ExampleWithAspNet.Controllers
             
             string Location = "SomeCity";
 
+
+            string SomePerson = "SomePerson";
+
             return View(schools);
         }
 

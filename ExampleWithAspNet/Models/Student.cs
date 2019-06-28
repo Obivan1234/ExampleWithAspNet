@@ -14,6 +14,7 @@ namespace ExampleWithAspNet.Models
       
 
         public string RegionFrom { get; set; }
+        public string KindOfStudent { get; set; }
 
         public int? SchoolId { get; set; }
         public School School { get; set; }

@@ -25,6 +25,8 @@ namespace ExampleWithAspNet.Controllers
             var CityName = "Lviv";
 
             decimal Price = 12.45m;
+            
+            string Location = "SomeCity";
 
             return View(schools);
         }

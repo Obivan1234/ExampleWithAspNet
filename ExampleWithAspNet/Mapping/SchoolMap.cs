@@ -15,6 +15,7 @@ namespace ExampleWithAspNet.Mapping
             this.HasKey(h => h.Id);
             this.Property(p => p.Name);
             this.Property(p => p.ZipCode);
+            this.Property(p => p.Grande);
 
             this.HasMany(p => p.Students)
                  .WithOptional(p => p.School)

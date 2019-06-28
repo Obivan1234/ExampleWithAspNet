@@ -10,6 +10,7 @@ namespace ExampleWithAspNet.Models
     {
         public String  Name { get; set; }
         public int ZipCode { get; set; }
+        public int Grande { get; set; }
 
         public virtual ICollection<Student> Students { get; set; }
     }

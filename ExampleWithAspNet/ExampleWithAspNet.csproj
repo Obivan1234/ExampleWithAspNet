@@ -200,6 +200,10 @@
     <Compile Include="Migrations\201906281515350_MergeMigration_01.Designer.cs">
       <DependentUpon>201906281515350_MergeMigration_01.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906281731567_Add Grande to School.cs" />
+    <Compile Include="Migrations\201906281731567_Add Grande to School.Designer.cs">
+      <DependentUpon>201906281731567_Add Grande to School.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\School.cs" />
@@ -281,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906281515350_MergeMigration_01.resx">
       <DependentUpon>201906281515350_MergeMigration_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906281731567_Add Grande to School.resx">
+      <DependentUpon>201906281731567_Add Grande to School.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

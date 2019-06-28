@@ -14,7 +14,8 @@ namespace ExampleWithAspNet.Mapping
             this.ToTable("Persons");
             this.HasKey(h => h.Id);
             this.Property(p => p.Name).IsRequired();
-            this.Property(p => p.Age).IsRequired();            
+            this.Property(p => p.Age).IsRequired();
+            this.Property(p => p.FullName).IsRequired();
         }
     }
 }

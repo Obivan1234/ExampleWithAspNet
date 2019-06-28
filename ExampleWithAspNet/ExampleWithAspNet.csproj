@@ -188,6 +188,10 @@
     <Compile Include="Migrations\201906281444362_temp2.Designer.cs">
       <DependentUpon>201906281444362_temp2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906281458334_Add FullName to Person and Delete Location.cs" />
+    <Compile Include="Migrations\201906281458334_Add FullName to Person and Delete Location.Designer.cs">
+      <DependentUpon>201906281458334_Add FullName to Person and Delete Location.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\School.cs" />
@@ -260,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906281444362_temp2.resx">
       <DependentUpon>201906281444362_temp2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906281458334_Add FullName to Person and Delete Location.resx">
+      <DependentUpon>201906281458334_Add FullName to Person and Delete Location.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

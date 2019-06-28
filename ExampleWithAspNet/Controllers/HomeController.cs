@@ -22,6 +22,8 @@ namespace ExampleWithAspNet.Controllers
         {          
             var schools = schoolService.GetSchools(x => x.Id >= 2);
 
+            var CityName = "Lviv";
+
             return View(schools);
         }
         

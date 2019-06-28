@@ -196,6 +196,10 @@
     <Compile Include="Migrations\201906281449084_Add RegionFrom property to Student.Designer.cs">
       <DependentUpon>201906281449084_Add RegionFrom property to Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906281515350_MergeMigration_01.cs" />
+    <Compile Include="Migrations\201906281515350_MergeMigration_01.Designer.cs">
+      <DependentUpon>201906281515350_MergeMigration_01.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\School.cs" />
@@ -274,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906281449084_Add RegionFrom property to Student.resx">
       <DependentUpon>201906281449084_Add RegionFrom property to Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906281515350_MergeMigration_01.resx">
+      <DependentUpon>201906281515350_MergeMigration_01.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

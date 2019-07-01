@@ -212,10 +212,6 @@
     <Compile Include="Migrations\201906281745089_MergeMigration_02.Designer.cs">
       <DependentUpon>201906281745089_MergeMigration_02.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907011459110_Delete some property from Student.cs" />
-    <Compile Include="Migrations\201907011459110_Delete some property from Student.Designer.cs">
-      <DependentUpon>201907011459110_Delete some property from Student.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\School.cs" />
@@ -306,9 +302,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906281745089_MergeMigration_02.resx">
       <DependentUpon>201906281745089_MergeMigration_02.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907011459110_Delete some property from Student.resx">
-      <DependentUpon>201907011459110_Delete some property from Student.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

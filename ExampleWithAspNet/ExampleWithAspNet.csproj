@@ -216,6 +216,10 @@
     <Compile Include="Migrations\201907011545437_MergeMigration_03.Designer.cs">
       <DependentUpon>201907011545437_MergeMigration_03.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907011600125_Add Color.cs" />
+    <Compile Include="Migrations\201907011600125_Add Color.Designer.cs">
+      <DependentUpon>201907011600125_Add Color.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\School.cs" />
@@ -309,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907011545437_MergeMigration_03.resx">
       <DependentUpon>201907011545437_MergeMigration_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011600125_Add Color.resx">
+      <DependentUpon>201907011600125_Add Color.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

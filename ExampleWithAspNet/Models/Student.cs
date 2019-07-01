@@ -11,6 +11,7 @@ namespace ExampleWithAspNet.Models
         public string Name { get; set; }
         public int Age { get; set; }
         public int Graduete { get; set; }
+        public string Color { get; set; }
 
         public int? SchoolId { get; set; }
         public School School { get; set; }

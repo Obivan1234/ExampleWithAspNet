@@ -14,13 +14,9 @@ namespace ExampleWithAspNet.Mapping
         {
             this.ToTable("Students");
             this.HasKey(h => h.Id);
-            this.Property(p => p.Graduete).IsRequired();
-            
+            this.Property(p => p.Graduete).IsRequired();            
             this.Property(p => p.Name).IsRequired();
             this.Property(p => p.Age).IsRequired();
-            this.Property(p => p.RegionFrom).IsRequired();
-
-            this.Property(p => p.KindOfStudent).IsRequired();
         }
     }
 }

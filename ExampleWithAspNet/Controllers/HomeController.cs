@@ -30,9 +30,6 @@ namespace ExampleWithAspNet.Controllers
             var schools = schoolService.GetSchoolById(1);
 
             return View(schools);
-        }
-
-        
-        
+        }    
     }
 }

@@ -216,6 +216,10 @@
     <Compile Include="Migrations\201907011545437_MergeMigration_03.Designer.cs">
       <DependentUpon>201907011545437_MergeMigration_03.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907011551150_Add MaleOrFemale to Person.cs" />
+    <Compile Include="Migrations\201907011551150_Add MaleOrFemale to Person.Designer.cs">
+      <DependentUpon>201907011551150_Add MaleOrFemale to Person.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201907011600125_Add Color.cs" />
     <Compile Include="Migrations\201907011600125_Add Color.Designer.cs">
       <DependentUpon>201907011600125_Add Color.cs</DependentUpon>
@@ -313,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907011545437_MergeMigration_03.resx">
       <DependentUpon>201907011545437_MergeMigration_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011551150_Add MaleOrFemale to Person.resx">
+      <DependentUpon>201907011551150_Add MaleOrFemale to Person.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907011600125_Add Color.resx">
       <DependentUpon>201907011600125_Add Color.cs</DependentUpon>

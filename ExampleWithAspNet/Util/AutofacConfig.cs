@@ -24,6 +24,7 @@ namespace ExampleWithAspNet.Util
                 .WithParameter("dbContext", new WebObjContext());
 
             builder.RegisterType<SchoolService>().As<ISchoolService>();
+            builder.RegisterType<PersonService>().As<IPersonService>();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

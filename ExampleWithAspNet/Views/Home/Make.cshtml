@@ -1,0 +1,32 @@
+﻿@model ExampleWithAspNet.Models.Person
+@{
+    ViewBag.Title = "Make";
+}
+
+<h2>Make</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.Name, "Name")
+    <br />
+    @Html.EditorFor(x => x.Name)
+    <br /><br />
+    @Html.LabelFor(x => x.Age, "Age")
+    <br />
+    @Html.EditorFor(x => x.Age)
+    <br /><br />
+    @Html.LabelFor(x => x.Location, "Location")
+    <br />
+    @Html.EditorFor(x => x.Location)
+    <br /><br />
+    @Html.LabelFor(x => x.MaleOrFemale, "Male/Female")
+    <br />
+    @Html.EditorFor(x => x.MaleOrFemale)
+    <br /><br />
+    @Html.LabelFor(x => x.FullName, "FullName")
+    <br />
+    @Html.EditorFor(x => x.FullName)
+    <br /><br />
+    <input type="submit" value="Make" />
+}
+

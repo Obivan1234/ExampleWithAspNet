@@ -1,13 +1,40 @@
-﻿@using ExampleWithAspNet.Models 
+﻿@using ExampleWithAspNet.Models
 
-@model  IEnumerable<School>
+@model  IEnumerable<ExampleWithAspNet.Models.Person>
 @{
     ViewBag.Title = "Home Page";
 }
 
-@foreach (var item in Model)
-{
-<p> @item.Id </p>
-<p> @item.Name </p>
-<p> @item.ZipCode</p>
-}
+
+<div class="col-md-6">
+    <h3>Persones</h3>
+    <table class="table table-striped">
+        <tr>
+            <th>@Html.DisplayName("Name")</th>
+            <th>@Html.DisplayName("Age")</th>
+            <th>@Html.DisplayName("Location")</th>
+            <th>@Html.DisplayName("Male/Female")</th>
+            <th>@Html.DisplayName("FullName")</th>
+        </tr>
+        @foreach (ExampleWithAspNet.Models.Person p in Model)
+        {
+            <tr>
+                <td><p>@p.Name</p></td>
+                <td><p>@p.Age<p/></td>
+                <td><p>@p.Location</p></td>
+                <td><p>@p.MaleOrFemale</p></td>
+                <td><p>@p.FullName</p></td>
+            </tr>
+        }
+    </table>
+</div>
+
+    <button type="button" onclick="location.href='@Url.Action("Make", "Home")'">Create</button>
+
+
+
+
+
+
+
+

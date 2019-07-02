@@ -30,5 +30,7 @@ namespace ExampleWithAspNet.Models
                 modelBuilder.Configurations.Add(instance);
             }           
         }
+
+        public System.Data.Entity.DbSet<ExampleWithAspNet.Models.Person> People { get; set; }
     }
 }

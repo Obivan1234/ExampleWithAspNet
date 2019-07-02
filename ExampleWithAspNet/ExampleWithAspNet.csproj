@@ -173,6 +173,7 @@
     <Compile Include="Infrastructure\BaseEntity.cs" />
     <Compile Include="Infrastructure\EFRepository.cs" />
     <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Mapping\LocationMap.cs" />
     <Compile Include="Mapping\PersonMap.cs" />
     <Compile Include="Mapping\SchoolMap.cs" />
     <Compile Include="Mapping\StudentMap.cs" />
@@ -228,7 +229,12 @@
     <Compile Include="Migrations\201907011603136_Merge-Migration_04.Designer.cs">
       <DependentUpon>201907011603136_Merge-Migration_04.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907021125104_Add Location model.cs" />
+    <Compile Include="Migrations\201907021125104_Add Location model.Designer.cs">
+      <DependentUpon>201907021125104_Add Location model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Student.cs" />
@@ -333,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907011603136_Merge-Migration_04.resx">
       <DependentUpon>201907011603136_Merge-Migration_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021125104_Add Location model.resx">
+      <DependentUpon>201907021125104_Add Location model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

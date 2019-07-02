@@ -7,16 +7,17 @@ using System.Web;
 
 namespace ExampleWithAspNet.Mapping
 {
-    public class PersonMap : EntityTypeConfiguration<Person>
+    public class LocationMap : EntityTypeConfiguration<Location>
     {
-        public PersonMap()
+        public LocationMap()
         {
-            this.ToTable("Persons");
+            this.ToTable("Locations");
             this.HasKey(h => h.Id);
             this.Property(p => p.Name).IsRequired();
-            this.Property(p => p.Age).IsRequired();
-            this.Property(p => p.FullName).IsRequired();
-            this.Property(p => p.Gender).IsRequired();          
+
+            this.HasMany(p => p.People)
+                .WithOptional(p => p.Location)
+                .HasForeignKey(p => p.LocationId);
         }
     }
 }

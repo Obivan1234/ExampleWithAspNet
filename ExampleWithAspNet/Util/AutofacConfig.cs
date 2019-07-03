@@ -20,11 +20,16 @@ namespace ExampleWithAspNet.Util
 
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
-            builder.RegisterGeneric(typeof(EFRepository<>)).As(typeof(IRepository<>))
-                .WithParameter("dbContext", new WebObjContext());
+            //builder.RegisterGeneric(typeof(EFRepository<>)).As(typeof(IRepository<>))
+            //    .WithParameter("dbContext", new WebObjContext());
 
-            builder.RegisterType<SchoolService>().As<ISchoolService>();
-            builder.RegisterType<PersonService>().As<IPersonService>();
+            builder.RegisterType<WebObjContext>().As<DbContext>().InstancePerLifetimeScope();
+            builder.RegisterGeneric(typeof(EFRepository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
+
+
+            builder.RegisterType<SchoolService>().As<ISchoolService>().InstancePerLifetimeScope();
+            builder.RegisterType<PersonService>().As<IPersonService>().InstancePerLifetimeScope();
+            builder.RegisterType<LocationService>().As<ILocationServise>().InstancePerLifetimeScope();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

@@ -13,7 +13,7 @@ namespace ExampleWithAspNet.Mapping
         {
             this.ToTable("Locations");
             this.HasKey(h => h.Id);
-            this.Property(p => p.Name).IsRequired();
+            this.Property(p => p.Name).IsOptional();
 
             this.HasMany(p => p.People)
                 .WithOptional(p => p.Location)

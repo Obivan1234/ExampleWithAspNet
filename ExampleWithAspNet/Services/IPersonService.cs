@@ -11,5 +11,8 @@ namespace ExampleWithAspNet.Services
     {
         void InsertPerson(Person person);
         IEnumerable<Person> GetPersones();
+        Person GetPersonById(int id);
+        void Remove(Person person);
+        void Update(Person person);
     }
 }

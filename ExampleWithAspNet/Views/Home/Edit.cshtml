@@ -1,41 +1,48 @@
 ﻿@model ExampleWithAspNet.Models.Person
+
 @{
-    ViewBag.Title = "Make";
+    Layout = null;
 }
 
-<h2>Making new person</h2>
+<!DOCTYPE html>
 
-@using (Html.BeginForm())
-{
-    <fieldset>
-
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body class="form-control">
+    @using (Html.BeginForm("Edit", "Home", FormMethod.Post))
+    {
         <legend>Person</legend>
+
+        //@Html.HiddenFor(x => x.Id)
 
         @Html.LabelFor(x => x.Name, "Name")
         <br />
         @Html.EditorFor(x => x.Name)
         <br /><br />
         @Html.LabelFor(x => x.Age, "Age")
-        <br />
+        <br /><br />
         @Html.EditorFor(x => x.Age)
         <br /><br />
         @Html.LabelFor(x => x.Location, "Location")
         <br />
-        @Html.DropDownListFor(model => model.LocationId, ViewBag.Location as SelectList)
+        @Html.DropDownListFor(model => model.LocationId, ViewBag.Locations as SelectList)
         <br /><br />
         @Html.LabelFor(x => x.Gender, "Gender")
         <br />
-        @Html.EnumDropDownListFor(x => x.Gender)
+        @Html.EnumDropDownListFor(model => model.Gender)
         <br /><br />
         @Html.LabelFor(x => x.FullName, "FullName")
         <br />
         @Html.EditorFor(x => x.FullName)
         <br /><br />
-        <input type="submit" value="Make" />
+        <input type="submit" value="Edit" class="btn btn-default" />
+    }
 
-    </fieldset>
-}
     <div>
-        @Html.ActionLink("Show players", "Index")
+        @Html.ActionLink("Back to List", "Index")
     </div>
-
+</body>
+</html>

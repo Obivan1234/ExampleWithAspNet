@@ -13,10 +13,10 @@ namespace ExampleWithAspNet.Mapping
         {
             this.ToTable("Persons");
             this.HasKey(h => h.Id);
-            this.Property(p => p.Name).IsRequired();
-            this.Property(p => p.Age).IsRequired();
-            this.Property(p => p.FullName).IsRequired();
-            this.Property(p => p.Gender).IsRequired();          
+            this.Property(p => p.Name).IsOptional();
+            this.Property(p => p.Age).IsOptional();
+            this.Property(p => p.FullName).IsOptional();
+            this.Property(p => p.Gender).IsOptional();          
         }
     }
 }

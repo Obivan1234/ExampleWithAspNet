@@ -10,6 +10,6 @@ namespace ExampleWithAspNet.Models
     {
         public string Name { get; set; }
 
-        public virtual ICollection<Person> People { get; set; }
+        public ICollection<Person> People { get; set; }
     }
 }

@@ -233,15 +233,26 @@
     <Compile Include="Migrations\201907021125104_Add Location model.Designer.cs">
       <DependentUpon>201907021125104_Add Location model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907021408403_Some Migration problem.cs" />
+    <Compile Include="Migrations\201907021408403_Some Migration problem.Designer.cs">
+      <DependentUpon>201907021408403_Some Migration problem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907031402099_Change Gender property.cs" />
+    <Compile Include="Migrations\201907031402099_Change Gender property.Designer.cs">
+      <DependentUpon>201907031402099_Change Gender property.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\WebObjContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ILocationServise.cs" />
     <Compile Include="Services\IPersonService.cs" />
     <Compile Include="Services\ISchoolService.cs" />
+    <Compile Include="Services\LocationService.cs" />
     <Compile Include="Services\PersonService.cs" />
     <Compile Include="Services\SchoolService.cs" />
     <Compile Include="Util\AutofacConfig.cs" />
@@ -283,6 +294,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Second.cshtml" />
     <Content Include="Views\Home\Make.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
+    <Content Include="Views\Home\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -342,6 +355,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907021125104_Add Location model.resx">
       <DependentUpon>201907021125104_Add Location model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021408403_Some Migration problem.resx">
+      <DependentUpon>201907021408403_Some Migration problem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907031402099_Change Gender property.resx">
+      <DependentUpon>201907031402099_Change Gender property.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
